@@ -46,11 +46,13 @@
         <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="EnableCrane" Nr="1" Type="bool" Value="0" Routing="untitled5App.ForceFeedbackJoystick.Button_0.Value" NetworkConvert="1"></Channel></Module></Packet>
     <Packet DigitalModuleHandling="AlignAdjacent" DigitalRegistersAreLinear="0" FunctionCode="ReadHoldingRegisters" Model="ModbusIO.ModbusMasterPacket" ModuleOrdering="AsConfigured" Name="IO_3" NetworkConvert="1" ReadAddress="0" SendMode="Periodic" SlaveId="1" WriteAddress="32008">
       <Module Model="IOModule" Name="Input" Description="A basic input and/or output module that accepts one or more CDPSignalChannels." InputBytesReservedAfter="0" InputBytesReservedBefore="0" OutputBytesReservedAfter="0" OutputBytesReservedBefore="0">
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Roll" Type="unsigned short" NetworkConvert="1"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Pitch" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Yaw" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Temp" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Boom" Type="unsigned short" NetworkConvert="1"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Base" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel></Module></Packet></Packets>
+        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="RollIMU" Type="unsigned short" NetworkConvert="1"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="PitchIMU" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="YawIMU" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="TempIMU" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="ActualBoomValue" Type="unsigned short" NetworkConvert="1"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="ActualBaseValue" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="OffsetBoom" Type="unsigned short" NetworkConvert="1"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="OffsetPitch" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel></Module></Packet></Packets>
   
 </Component>
