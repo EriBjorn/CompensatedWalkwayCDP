@@ -1,0 +1,9 @@
+#include <CDP2QtLib.h>
+#include <CDPBaseWidgetsLib.h>
+#include <cdpgraphwidgetslib.h>
+#include <forcefeedbackjoystick.h>
+#include <modbusio.h>
+#include <CDPEventListLib.h>
+#include <automation.h>
+#include <cdpeventmanager.h>
+#include <StudioAPIServerLib.h>

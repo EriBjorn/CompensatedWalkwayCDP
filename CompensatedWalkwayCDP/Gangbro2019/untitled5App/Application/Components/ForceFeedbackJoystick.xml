@@ -1,0 +1,69 @@
+<Component Model='ForceFeedbackJoystick' Name='ForceFeedbackJoystick' src='Components/ForceFeedbackJoystick.xml' Description="
+    Force Feedback Joystick Model. Retrieves data from attached joystick device into CDPSignals.
+    More button signals can be added by adding CDPSignal&amp;lt;bool&amp;gt; named Button_*, f.i.
+    Button_9.
+  ">
+  <Device>/dev/input/js1</Device>
+  <fs>100</fs>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Description="x position signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="x" Type="int"></Signal>
+    <Signal Description="y position signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="y" Type="int"></Signal>
+    <Signal Description="z position signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="z" Type="int"></Signal>
+    <Signal Description="ax rotation signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="ax" Type="int"></Signal>
+    <Signal Description="ay rotation signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="ay" Type="int"></Signal>
+    <Signal Description="az rotation signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="az" Type="int">
+      <Operator Model="Automation.ScalingOperator&lt;unsigned short&gt;" Name="ScalingOperator" Type="unsigned short">
+        <ScalingPoint InValue="0" Model="Automation.ScalingPoint&lt;unsigned short&gt;" Name="ScalingPoint" OutValue="0" Type="unsigned short"></ScalingPoint>
+        <ScalingPoint InValue="0" Model="Automation.ScalingPoint&lt;unsigned short&gt;" Name="ScalingPoint1" OutValue="0" Type="unsigned short"></ScalingPoint></Operator></Signal>
+    <Signal Description="vx velocity signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="vx" Type="int"></Signal>
+    <Signal Description="vy velocity signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="vy" Type="int"></Signal>
+    <Signal Description="vz velocity signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="vz" Type="int"></Signal>
+    <Signal Description="wx angular velocity signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="wx" Type="int"></Signal>
+    <Signal Description="wy angular velocity signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="wy" Type="int"></Signal>
+    <Signal Description="wz angular velocity signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="wz" Type="int"></Signal>
+    <Signal Description="Fx force signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Fx" Type="int"></Signal>
+    <Signal Description="Fy force signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Fy" Type="int"></Signal>
+    <Signal Description="Fz force signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Fz" Type="int"></Signal>
+    <Signal Description="Tx torque signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Tx" Type="int"></Signal>
+    <Signal Description="Ty torque signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Ty" Type="int"></Signal>
+    <Signal Description="Tz torque signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Tz" Type="int"></Signal>
+    <Signal Description="Slider signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Slider1" Type="int"></Signal>
+    <Signal Description="Slider signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Slider2" Type="int"></Signal>
+    <Signal Description="Force multiplier signal" Input="0" Model="CDPSignal&lt;int&gt;" Name="ForceMultiplier" Type="int"></Signal>
+    <Signal Description="force_x signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Force_x" Type="int"></Signal>
+    <Signal Description="force_y signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Force_y" Type="int"></Signal>
+    <Signal Description="force_z signal from joystick" Input="0" Model="CDPSignal&lt;int&gt;" Name="Force_z" Type="int"></Signal>
+    <Signal Description="POV Hat Left" Input="0" Model="CDPSignal&lt;bool&gt;" Name="POV_Left" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="POV Hat Right" Input="0" Model="CDPSignal&lt;bool&gt;" Name="POV_Right" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="POV Hat Up" Input="0" Model="CDPSignal&lt;bool&gt;" Name="POV_Up" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="POV Hat Down" Input="0" Model="CDPSignal&lt;bool&gt;" Name="POV_Down" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="X scaled with slider signal" Input="0" Model="CDPSignal&lt;double&gt;" Name="x scaled" Type="double"></Signal>
+    <Signal Description="y scaled with slider signal" Input="0" Model="CDPSignal&lt;double&gt;" Name="y scaled" Type="double"></Signal>
+    <Signal Description="z scaled with slider signal" Input="0" Model="CDPSignal&lt;double&gt;" Name="z scaled" Type="double"></Signal>
+    <Signal Description="Button 0" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_0" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="Button 1" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_1" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="Button 2" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_2" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="Button 3" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_3" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="Button 4" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_4" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="Button 5" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_5" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="Button 6" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_6" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="Button 7" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_7" Type="bool" Unit="0/1"></Signal>
+    <Signal Description="Button 8" Input="0" Model="CDPSignal&lt;bool&gt;" Name="Button_8" Type="bool" Unit="0/1"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+  </Alarms>
+
+  <Timers>
+    <Timer Description="Timer to measure CDPComponent processing." Model="CDPTimer" Name="ProcessTimer"></Timer>
+  </Timers>
+
+  <Parameters>
+    <Parameter Description="ForceFeedback Gain" Name="FFGain" PreviousValue="1" Unit="N/A" Value="1"></Parameter>
+    <Parameter Description="AutoCenter on=1 off = 0" Name="AutoCenter" Unit="0 / 1"></Parameter>
+  </Parameters>
+</Component>
