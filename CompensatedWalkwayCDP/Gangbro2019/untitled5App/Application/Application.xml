@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <Application Name="untitled5App" Model="Application" Description=''>
-  <ApplicationHandle>1</ApplicationHandle>
+  <ApplicationHandle>2</ApplicationHandle>
   <fs>10</fs>
   <ClockSync>None</ClockSync>
   <IsTimeServer>0</IsTimeServer>
   <OStimeInterval>120</OStimeInterval>
   <Domain>untitled5</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.1" SubnetMask="255.255.255.255"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="158.38.140.2" SubnetMask="255.255.255.0"></NetworkInterface>
 
   <CDPMessages>
     <TimestampLocal>1</TimestampLocal>
@@ -17,7 +17,6 @@
 
   <Subcomponents>
     <Subcomponent Name="CDP"                Model="CDP"               src="Components\CDP.xml"></Subcomponent>
-    <Subcomponent Name="CDP2Qt"             Model="CDP2Qt"            src="Components\CDP2Qt.xml"></Subcomponent>
     <Subcomponent Model="ModbusIO.ModbusMasterTCP" Name="ModbusMasterTCP" src="Components/ModbusMasterTCP.xml"></Subcomponent>
     <Subcomponent Model="ForceFeedbackJoystick" Name="ForceFeedbackJoystick" src="Components/ForceFeedbackJoystick.xml"></Subcomponent>
   </Subcomponents>

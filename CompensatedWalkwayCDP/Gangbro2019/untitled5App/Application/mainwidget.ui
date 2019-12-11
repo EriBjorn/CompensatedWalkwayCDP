@@ -312,7 +312,7 @@
        <item>
         <widget name="buttonWithLamp" class="CDPBaseButtonWithLamp">
          <property name="text">
-          <string>PÅ</string>
+          <string>PA</string>
          </property>
          <property name="svgFile">
           <string>:/themes/flat_gray_light/buttons/buttonPlainLedM.svg</string>
@@ -441,7 +441,7 @@
        <item>
         <widget name="button" class="CDPBaseButton">
          <property name="text">
-          <string>NØDSTOPP</string>
+          <string>NODSTOPP</string>
          </property>
          <property name="svgFile">
           <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>

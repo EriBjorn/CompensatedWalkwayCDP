@@ -48,7 +48,6 @@ OBJECTS       = release/CDPMain.o
 
 DIST          = Application/Application.xml \
 		Application/Components/CDP.xml \
-		Application/Components/CDP2Qt.xml \
 		Application/Components/ForceFeedbackJoystick.xml \
 		Application/Components/ModbusMasterTCP.xml \
 		Application/Components/CDP/CDPEngine.xml \
