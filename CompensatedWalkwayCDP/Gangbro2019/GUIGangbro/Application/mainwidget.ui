@@ -22,11 +22,8 @@
   <property name="msgBoxBtnSvg">
    <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
   </property>
-  <property name="themeNight">
-   <string>flat_gray</string>
-  </property>
-  <property name="themeDay">
-   <string>flat_gray_light</string>
+  <property name="themeDayActive" stdset="0">
+   <bool>true</bool>
   </property>
   <property name="numPadName" stdset="0">
    <string>CDPBaseNumPad</string>
@@ -115,7 +112,7 @@
           <string>Degrees</string>
          </property>
          <property name="textSuffix">
-          <string>BOOM</string>
+          <string>BASE</string>
          </property>
          <property name="numPrecision" stdset="0">
           <number>0</number>
@@ -354,7 +351,10 @@
           <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
          </property>
          <property name="cdpPressedRouting" stdset="0">
-          <string>untitled5App.ModbusMasterTCP.IO_2.Output.StartMotor.Value</string>
+          <string>untitled5App.ModbusMasterTCP.IO_2.Output.START_CRANE.Value</string>
+         </property>
+         <property name="cdpEnabledRouting" stdset="0">
+          <string/>
          </property>
          <property name="pushRoutables" stdset="0">
           <stringlist>
@@ -376,7 +376,7 @@
           <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
          </property>
          <property name="cdpPressedRouting" stdset="0">
-          <string>untitled5App.ModbusMasterTCP.IO_2.Output.Stop.Value</string>
+          <string>untitled5App.ModbusMasterTCP.IO_2.Output.STOP_CRANE.Value</string>
          </property>
          <property name="pushRoutables" stdset="0">
           <stringlist>
