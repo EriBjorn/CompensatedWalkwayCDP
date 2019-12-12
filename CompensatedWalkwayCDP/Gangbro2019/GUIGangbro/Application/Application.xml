@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<Application Name="untitled5App" Model="Application" Description=''>
-  <ApplicationHandle>2</ApplicationHandle>
+<Application Name="GUIGangbro" Model="Application" Description=''>
+  <ApplicationHandle>1</ApplicationHandle>
   <fs>10</fs>
   <ClockSync>None</ClockSync>
   <IsTimeServer>0</IsTimeServer>
@@ -17,8 +17,7 @@
 
   <Subcomponents>
     <Subcomponent Name="CDP"                Model="CDP"               src="Components\CDP.xml"></Subcomponent>
-    <Subcomponent Model="ModbusIO.ModbusMasterTCP" Name="ModbusMasterTCP" src="Components/ModbusMasterTCP.xml"></Subcomponent>
-    <Subcomponent Model="ForceFeedbackJoystick" Name="ForceFeedbackJoystick" src="Components/ForceFeedbackJoystick.xml"></Subcomponent>
+    <Subcomponent Name="CDP2Qt"             Model="CDP2Qt"            src="Components\CDP2Qt.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>

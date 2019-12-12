@@ -1,8 +1,6 @@
 -IC:/CDPStudio/toolkits/win32_12/Qt-5.6/mkspecs/win32-g++
--IC:/Users/ebjor/Desktop/gangbro/CompensatedWalkwayCDP_RIKTIG/CompensatedWalkwayCDP/CompensatedWalkwayCDP/Gangbro2019/untitled5App
+-IC:/Users/ebjor/Desktop/gangbro/CompensatedWalkwayCDP_RIKTIG/CompensatedWalkwayCDP/CompensatedWalkwayCDP/Gangbro2019/GUIGangbro
 -IC:/CDPStudio/toolkits/win32_12/CDP-4.7/include
--IC:/CDPStudio/toolkits/win32_12/CDP-4.7/include/ModbusIO
--IC:/CDPStudio/toolkits/win32_12/CDP-4.7/include/ForceFeedbackJoystick
 -IC:/CDPStudio/toolkits/win32_12/CDP-4.7/include/cdpgraphwidgetslib/include
 -IC:/CDPStudio/toolkits/win32_12/CDP-4.7/include/dbdataproviderlib/include
 -IC:/CDPStudio/toolkits/win32_12/CDP-4.7/include/dbmessaginglib/include

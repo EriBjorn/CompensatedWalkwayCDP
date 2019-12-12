@@ -43,14 +43,20 @@
       <Module Model="IOModule" Name="Output" Description="A basic input and/or output module that accepts one or more CDPSignalChannels." InputBytesReservedAfter="0" InputBytesReservedBefore="0" OutputBytesReservedAfter="0" OutputBytesReservedBefore="0">
         <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="StartMotor" Nr="1" Type="bool" Routing="untitled5App.ForceFeedbackJoystick.Button_2.Value" NetworkConvert="1"></Channel>
         <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="Stop" Nr="1" Type="bool" Value="0" Routing="untitled5App.ForceFeedbackJoystick.Button_3.Value" NetworkConvert="1"></Channel>
-        <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="EnableCrane" Nr="1" Type="bool" Value="0" Routing="untitled5App.ForceFeedbackJoystick.Button_0.Value" NetworkConvert="1"></Channel></Module></Packet>
-    <Packet DigitalModuleHandling="AlignAdjacent" DigitalRegistersAreLinear="0" FunctionCode="ReadHoldingRegisters" Model="ModbusIO.ModbusMasterPacket" ModuleOrdering="AsConfigured" Name="IO_3" NetworkConvert="1" ReadAddress="0" SendMode="Periodic" SlaveId="1" WriteAddress="32008">
-      <Module Model="IOModule" Name="Input" Description="A basic input and/or output module that accepts one or more CDPSignalChannels." InputBytesReservedAfter="0" InputBytesReservedBefore="0" OutputBytesReservedAfter="0" OutputBytesReservedBefore="0">
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Roll" Type="unsigned short" NetworkConvert="1"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Pitch" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Yaw" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Temp" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Boom" Type="unsigned short" NetworkConvert="1"></Channel>
-        <Channel Input="0" Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Base" Type="unsigned short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel></Module></Packet></Packets>
+        <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="EnableCrane" Nr="1" Type="bool" Value="0" Routing="untitled5App.ForceFeedbackJoystick.Button_0.Value" NetworkConvert="1"></Channel>
+        <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="SimulationMode" Nr="1" Type="bool" Value="0" NetworkConvert="1"></Channel>
+        <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="JoystickMode" Nr="1" Type="bool" Value="0" NetworkConvert="1"></Channel>
+        <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="CompensationMode" Nr="1" Type="bool" Value="0" NetworkConvert="1"></Channel>
+        <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="START_CRANE" Nr="1" Type="bool" NetworkConvert="1"></Channel>
+        <Channel Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="STOP_CRANE" Nr="1" Type="bool" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel></Module></Packet>
+    <Packet DigitalModuleHandling="AlignAdjacent" DigitalRegistersAreLinear="0" FunctionCode="ReadHoldingRegisters" Model="ModbusIO.ModbusMasterPacket" ModuleOrdering="AsConfigured" Name="IO_3" NetworkConvert="1" ReadAddress="0" SendMode="Periodic" SlaveId="1" WriteAddress="0">
+      <Module Model="IOModule" Name="IOModule" Description="A basic input and/or output module that accepts one or more CDPSignalChannels." InputBytesReservedAfter="0" InputBytesReservedBefore="0" OutputBytesReservedAfter="0" OutputBytesReservedBefore="0">
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="CompBaseAngle" Type="short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="YawValue" Type="short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="CompBoomAngle" Type="short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="CompBaseAngle&apos;" Type="short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="ActualBoomValue" Type="short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="ActualBaseValue" Type="short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="Temp" Type="short" InternalValue="0" NetworkConvert="1" Routing="" Unit="" Value="0"></Channel></Module></Packet></Packets>
   
 </Component>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="CDPBaseMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1246</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main Window</string>
+  </property>
+  <property name="stylingType">
+   <enum>CDPBaseMainWindow::CSS</enum>
+  </property>
+  <property name="msgBoxBgSvg">
+   <string>:/themes/flat_gray_light/backgrounds/bgMsgBox.svg</string>
+  </property>
+  <property name="msgBoxBtnSvg">
+   <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+  </property>
+  <property name="themeDayActive" stdset="0">
+   <bool>true</bool>
+  </property>
+  <property name="numPadName" stdset="0">
+   <string>CDPBaseNumPad</string>
+  </property>
+  <property name="keyPadName" stdset="0">
+   <string>CDPBaseKeyPad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="CDPBaseContainer" name="container">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="CDPBaseLabel" name="label">
+         <property name="text">
+          <string>ACTUAL VALUES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="CDPBaseLabel" name="label_6">
+         <property name="text">
+          <string>BOOM</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseMeter" name="meter_5">
+         <property name="meterType">
+          <enum>CDPBaseMeter::GMT</enum>
+         </property>
+         <property name="minValue">
+          <double>-90.000000000000000</double>
+         </property>
+         <property name="maxValue">
+          <double>90.000000000000000</double>
+         </property>
+         <property name="numPrecision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="numOffset">
+          <number>2</number>
+         </property>
+         <property name="ticksMajor" stdset="0">
+          <number>10</number>
+         </property>
+         <property name="ticksMinor" stdset="0">
+          <number>1</number>
+         </property>
+         <property name="ticksMajorLength" stdset="0">
+          <number>5</number>
+         </property>
+         <property name="ticksMinorLength" stdset="0">
+          <number>3</number>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_3.IOModule.ActualBoomValue.Value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseMeter" name="meter_9">
+         <property name="meterType">
+          <enum>CDPBaseMeter::Custom</enum>
+         </property>
+         <property name="maxValue">
+          <double>360.000000000000000</double>
+         </property>
+         <property name="textPrefix">
+          <string>Degrees</string>
+         </property>
+         <property name="textSuffix">
+          <string>BASE</string>
+         </property>
+         <property name="numPrecision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_3.IOModule.ActualBaseValue.Value</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="CDPBaseContainer" name="container_2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="CDPBaseLabel" name="label_2">
+         <property name="text">
+          <string>COMPENSATED ANGLE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="CDPBaseLabel" name="label_8">
+         <property name="text">
+          <string>BOOM</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseMeter" name="meter_4">
+         <property name="meterType">
+          <enum>CDPBaseMeter::GMT</enum>
+         </property>
+         <property name="minValue">
+          <double>-90.000000000000000</double>
+         </property>
+         <property name="maxValue">
+          <double>90.000000000000000</double>
+         </property>
+         <property name="numPrecision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="numOffset">
+          <number>2</number>
+         </property>
+         <property name="ticksMajor" stdset="0">
+          <number>10</number>
+         </property>
+         <property name="ticksMinor" stdset="0">
+          <number>1</number>
+         </property>
+         <property name="ticksMajorLength" stdset="0">
+          <number>5</number>
+         </property>
+         <property name="ticksMinorLength" stdset="0">
+          <number>3</number>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_3.IOModule.CompBoomAngle.Value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseMeter" name="meter_8">
+         <property name="meterType">
+          <enum>CDPBaseMeter::Custom</enum>
+         </property>
+         <property name="maxValue">
+          <double>360.000000000000000</double>
+         </property>
+         <property name="textPrefix">
+          <string>Degrees</string>
+         </property>
+         <property name="textSuffix">
+          <string>BASE</string>
+         </property>
+         <property name="numPrecision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_3.IOModule.CompBaseAngle'.Value</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="CDPBaseContainer" name="container_4">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="CDPBaseLabel" name="label_3">
+         <property name="text">
+          <string>IMU VALUES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="CDPBaseLabel" name="label_10">
+         <property name="text">
+          <string>PITCH</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseMeter" name="meter">
+         <property name="meterType">
+          <enum>CDPBaseMeter::GMT</enum>
+         </property>
+         <property name="minValue">
+          <double>-90.000000000000000</double>
+         </property>
+         <property name="maxValue">
+          <double>90.000000000000000</double>
+         </property>
+         <property name="numPostfix">
+          <string/>
+         </property>
+         <property name="numPrecision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="numOffset">
+          <number>5</number>
+         </property>
+         <property name="ticksShow" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="ticksMajor" stdset="0">
+          <number>10</number>
+         </property>
+         <property name="ticksMinor" stdset="0">
+          <number>1</number>
+         </property>
+         <property name="ticksMajorLength" stdset="0">
+          <number>5</number>
+         </property>
+         <property name="ticksMinorLength" stdset="0">
+          <number>3</number>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_3.IOModule.CompBaseAngle.Value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseMeter" name="meter_7">
+         <property name="meterType">
+          <enum>CDPBaseMeter::Custom</enum>
+         </property>
+         <property name="maxValue">
+          <double>360.000000000000000</double>
+         </property>
+         <property name="textPrefix">
+          <string>Degrees</string>
+         </property>
+         <property name="textSuffix">
+          <string>YAW</string>
+         </property>
+         <property name="numPrecision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_3.IOModule.YawValue.Value</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="CDPBaseContainer" name="container_3">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="CDPBaseLabel" name="label_4">
+         <property name="text">
+          <string>OPERATION</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_14">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="CDPBaseLabel" name="label_14">
+         <property name="text">
+          <string>START</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseButton" name="button">
+         <property name="svgFile">
+          <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+         </property>
+         <property name="cdpPressedRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_2.Output.START_CRANE.Value</string>
+         </property>
+         <property name="cdpEnabledRouting" stdset="0">
+          <string/>
+         </property>
+         <property name="pushRoutables" stdset="0">
+          <stringlist>
+           <string>cdpPressedRouting</string>
+          </stringlist>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseLabel" name="label_15">
+         <property name="text">
+          <string>STOP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseButton" name="button_2">
+         <property name="svgFile">
+          <string>:/themes/flat_gray_light/buttons/buttonPlain.svg</string>
+         </property>
+         <property name="cdpPressedRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_2.Output.STOP_CRANE.Value</string>
+         </property>
+         <property name="pushRoutables" stdset="0">
+          <stringlist>
+           <string>cdpPressedRouting</string>
+          </stringlist>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>85</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="CDPBaseLabel" name="label_5">
+         <property name="text">
+          <string>JOYSTICK MODE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseToggleButton" name="toggleButton">
+         <property name="pushRoutables" stdset="0">
+          <stringlist>
+           <string>cdpTextMsgRouting</string>
+           <string>cdpRouting</string>
+          </stringlist>
+         </property>
+         <property name="svgFile">
+          <string>:/themes/flat_gray_light/buttons/toggleButtonDefault.svg</string>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_2.Output.JoystickMode.Value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="CDPBaseLabel" name="label_12">
+         <property name="text">
+          <string>COMPENSATION MODE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseToggleButton" name="toggleButton_2">
+         <property name="pushRoutables" stdset="0">
+          <stringlist>
+           <string>cdpTextMsgRouting</string>
+           <string>cdpRouting</string>
+          </stringlist>
+         </property>
+         <property name="svgFile">
+          <string>:/themes/flat_gray_light/buttons/toggleButtonDefault.svg</string>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_2.Output.CompensationMode.Value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="CDPBaseLabel" name="label_13">
+         <property name="text">
+          <string>SIMULATION MODE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="CDPBaseToggleButton" name="toggleButton_3">
+         <property name="pushRoutables" stdset="0">
+          <stringlist>
+           <string>cdpTextMsgRouting</string>
+           <string>cdpRouting</string>
+          </stringlist>
+         </property>
+         <property name="svgFile">
+          <string>:/themes/flat_gray_light/buttons/toggleButtonDefault.svg</string>
+         </property>
+         <property name="cdpRouting" stdset="0">
+          <string>untitled5App.ModbusMasterTCP.IO_2.Output.SimulationMode.Value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBaseContainer</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseContainer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseButton</class>
+   <extends>QPushButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseToggleButton</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseToggleButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLabel</class>
+   <extends>QLabel</extends>
+   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseMeter</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseMeter.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseMainWindow</class>
+   <extends>QMainWindow</extends>
+   <header>CDPBaseWidgets/CDPBaseMainWindow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

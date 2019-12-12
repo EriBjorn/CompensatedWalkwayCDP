@@ -4,4 +4,5 @@ load(cdp)
 
 DISTFILES += $$files(*.xml, false)
 
-SUBDIRS +=     untitled5App
+SUBDIRS +=     untitled5App \
+    GUIGangbro
